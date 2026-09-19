@@ -156,7 +156,10 @@
         <p class="section-subtitle">Fill out the brief details below. We typically respond within 12 hours.</p>
         
         <div class="form-card">
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <!-- Web3Forms Integration -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="ecca2752-ad29-4b74-8201-6293e89da958">
+                
                 <div class="form-group">
                     <label>Full Name</label>
                     <input type="text" name="name" required placeholder="Enter your full name">
@@ -181,10 +184,10 @@
                 </div>
                 <div class="form-group">
                     <label>Describe Your Condition / Requirements</label>
-                    <textarea name="message" rows="4" placeholder="Briefly mention your dental/medical requirements or report status..."></textarea>
+                    <textarea name="message" rows="4" required placeholder="Briefly mention your dental/medical requirements or report status..."></textarea>
                 </div>
                 <button type="submit" class="form-submit">Get Free Estimate & Plan</button>
-            </main>
+            </form>
         </div>
     </div>
 
